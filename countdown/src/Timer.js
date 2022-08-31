@@ -10,6 +10,9 @@ function Timer() {
         else{setSeconds(s-1)}
     }
     const reset = () => {
+        if(over){
+            setOver(false);
+        }
         setSeconds(50);
     }
     const pause = () => {
